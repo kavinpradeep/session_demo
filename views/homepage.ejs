@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="angularjs/homepage.js"></script>
+<title>Welcome</title>
+</head>
+<body ng-app = 'homepage' ng-controller = 'homepage'>
+		<h4>Welcome to the Shopping Cart</h4>
+		<div class="col-md-6">
+			<form >
+				<div> 
+					<h5> Pen </h5>
+					<p>  Cost is $3 </p>
+					<button ng-click="addPen()" class="btn btn-success">Add Pen to Cart</button>
+				</div>
+				<div> 
+					<h5> Pencil </h5>
+					<p>  Cost is $5 </p>
+					<button ng-click="addPencil()" class="btn btn-success">Add Pencil to Cart</button>
+				</div>
+				
+				<div> 
+					<h5> Paper </h5>
+					<p>  Cost is $7 </p>
+					<button ng-click="addPaper()" class="btn btn-success">Add Paper to Cart</button>
+				</div>
+				
+				<div> 
+					<h5> Notebook </h5>
+					<p>  Cost is $9 </p>
+					<button ng-click="addNote()" class="btn btn-success">Add Notebook to Cart</button>
+				</div>
+				
+				
+			</form>
+		</div>
+		<div class="col-md-6">
+			<form >
+				<table class="table table-hover">
+                <thead>
+                    <tr>
+                      <th>Cart </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="rowContent in rows">
+                      <td>{{rowContent.item}}</td>
+                      <td>{{rowContent.price}}</td>
+                    </tr>
+                </tbody>
+                </table>
+				<label ng-bind="carttotal">
+			</form>
+		</div>
+	
+</body>
+</html>
