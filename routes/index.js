@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('login', { title: 'Angular-Bootsap Login Application' });
+  res.render('login', { title: 'Angulaap Login Application' });
 };
