@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('login', { title: 'Angap Login Application' });
+  res.render('login', { title: 'Login Application' });
 };
