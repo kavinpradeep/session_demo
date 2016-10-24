@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  res.render('login', { title: 'AngularJS-Bootstrap Login Application' });
+  res.render('login', { title: 'Angular-Bootstrap Login Application' });
 };
